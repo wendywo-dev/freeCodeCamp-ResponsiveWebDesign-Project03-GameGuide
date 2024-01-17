@@ -1,10 +1,18 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
   min-width: 290px;
   color: #2b2b2b;
   background-color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2;
 }
 
 #navbar {
@@ -14,15 +22,15 @@ body {
   left: 0px;
   width: 300px;
   height: 100%;
-  border-right: solid;
-  border-color: rgba(0, 22, 22, 0.4);
+  background-color: rgb(29, 45, 59);
 }
 
 header {
-  color: black;
-  margin: 10px;
+  margin-top: 10px;
   text-align: center;
   font-size: 1.8em;
+  font-family: "Cinzel", serif;
+  font-weight: 700;
 }
 
 #main-doc header {
@@ -32,25 +40,32 @@ header {
 
 #navbar ul {
   height: 88%;
-  padding: 0;
   overflow-y: auto;
   overflow-x: hidden;
 }
 
 #navbar li {
-  color: #434343;
-  border-top: 1px solid;
   list-style: none;
   position: relative;
   width: 100%;
 }
 
+#navbar-title,
+#navbar a {
+  color: rgb(226, 226, 226);
+  padding: 10px 30px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 #navbar a {
   display: block;
-  padding: 10px 30px;
-  color: #434343;
   text-decoration: none;
   cursor: pointer;
+}
+
+#navbar a:hover {
+  background-color: rgb(71, 111, 146);
 }
 
 #main-doc {
@@ -66,7 +81,7 @@ section article {
 }
 
 section li {
-  margin: 10px 0 0 8px;
+  margin: 10px 0 0 30px;
 }
 
 code {
@@ -86,25 +101,42 @@ code {
   border-radius: 5px;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 @media only screen and (max-width: 815px) {
   /* for mobile-phones */
   #navbar ul {
-    border: 1px solid;
-    height: 207px;
+    height: 160px;
   }
 
   #navbar {
-    background-color: #bdbdbd;
     position: absolute;
     top: 0;
     padding: 0;
     margin: 0;
     width: 100%;
-    max-height: 275px;
-    border: none;
+    max-height: 250px;
     z-index: 1;
-    border-bottom: 2px solid;
   }
+
   #main-doc {
     position: relative;
     margin-top: 300px;
@@ -112,9 +144,19 @@ code {
   }
 }
 
+@media only screen and (max-width: 510px) {
+  #navbar ul {
+    height: 100px;
+  }
+
+  #navbar {
+    max-height: 250px;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   #main-doc {
-    margin-left: -10px;
+    margin-left: 10px;
   }
 
   code {
@@ -124,5 +166,15 @@ code {
     padding-left: 10px;
     padding-right: 45px;
     min-width: 233px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  #navbar ul {
+    height: 100px;
+  }
+
+  #navbar {
+    max-height: 300px;
   }
 }

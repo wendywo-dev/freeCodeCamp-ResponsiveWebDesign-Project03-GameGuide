@@ -1,83 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hogwarts Legacy Guide 2023</title>
-        <link rel="stylesheet" href="./style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-<title>Hogwarts Legacy Guide 2023</title>
-    </head>
-    <body>
-        <nav id="navbar">
-            <header>Hogwarts Legacy Guide 2023</header>
-            <ul>
-                <li><a class="nav-link" href="#introduction">Introduction</a></li>
-                <li><a class="nav-link" href="#what_you_should_already_know">What you should already know</a></li>
-                <li><a class="nav-link" href="#javascript_and_java">JavaScript and Java</a>
-                <li><a class="nav-link" href="#hello_world">Hello world</a></li></li>
-                <li><a class="nav-link" href="#variables">Variables</a></li>
-                <li><a class="nav-link" href="#declaring_variables">Declaring variables</a></li>
-            </ul>  
-        </nav>
-        <main id="main-doc">
-            <section id="introduction" class="main-section">
-                <header>Introduction</header>
-                <article>
-                    <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
-                    <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
-                    <ul>
-                        <li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
-                        <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
-                    </ul>
-                </article>
-            </section>
-            <section id="what_you_should_already_know" class="main-section">
-                <header>What you should already know</header>
-                <p>This guide assumes you have the following basic background:</p>
-                <ul>
-                    <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
-                    <li>Good working knowledge of HyperText Markup Language (HTML).</li>
-                    <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
-                </ul>
-            </section>
-            <section id="javascript_and_java" class="main-section">
-                <header>JavaScript and Java</header>
-                <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
-                <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
-                <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
-            </section>
-            <section id="hello_world" class="main-section">
-                <header>Hello world</header>
-                <p> To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
-                <code>function greetMe(yourName) { alert("Hello " + yourName); }
-                    greetMe("World");</code>
-                <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
-            </section>
-            <section id="variables" class="main-section">
-                <header>Variables</header>
-                <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
-                <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
-                <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
-            </section>
-            <section id="declaring_variables" class="main-section">
-                <header>Declaring variables</header>
-                <p>You can declare a variable in three ways:</p>
-                <p>With the keyword var. For example,</p>
-                <code>var x = 42.</code>
-                <p>This syntax can be used to declare both local and global variables.</p>
-                <p>By simply assigning it a value. For example,</p>
-                <code>x = 42.</code>
-                <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.</p>
-                <p>With the keyword let. For example,</p>
-                <code>let y = 13.</code>
-                <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
-                <code>i'm a code</code>
-            </section>
-        </main>
-    </body>
-
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./style.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <title>Hogwarts Legacy Guide 2023</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header id="navbar-title">Hogwarts Legacy Guide 2023</header>
+      <ul>
+        <li>
+          <a
+            class="nav-link"
+            href="#walkthrough"
+            >Walkthrough</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            href="#the_path_to_hogwarts"
+            >The Path to Hogwarts</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            href="#welcome_to_hogwarts"
+            >Welcome to Hogwarts</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            href="#charms_class"
+            >Charms Class</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            href="#defense_against_the_dark_arts_class"
+            >Defense Against the Dark Arts Class</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            href="#weasley_after_class"
+            >Weasley After Class</a
+          >
+        </li>
+        <li>
+          <a
+            class="nav-link"
+            href="#welcome_to_hogsmeade"
+            >Welcome to Hogsmeade</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section
+        id="walkthrough"
+        class="main-section">
+        <header>Walkthrough</header>
+        <article>
+          <p>
+            Life at Hogwarts is a busy one, especially in Hogwarts Legacy where
+            you're tasked with catching up on years of lessons and helping
+            thwart dark plans that threaten the Wizarding World.
+          </p>
+          <p>
+            IGN's Hogwarts Legacy <b>walkthrough</b> will take you through all
+            <b>40 main quests</b> with tips, strategies, and notes on important
+            things to find on your journey. This walkthrough applies to all
+            versions of Hogwarts Legacy, including PC, PS4, PS5, Xbox Series X/S
+            versions, and Nintendo Switch.
+          </p>
+          <p>Below are some of the main quest chapters:</p>
+          <ul>
+            <li>The Path to Hogwarts</li>
+            <li>Welcome to Hogwarts</li>
+            <li>Charms Class</li>
+            <li>Defense Against the Dark Arts Class</li>
+            <li>Weasley After Class</li>
+            <li>Welcome to Hogsmeade</li>
+          </ul>
+        </article>
+      </section>
+      <section
+        id="the_path_to_hogwarts"
+        class="main-section">
+        <header>The Path to Hogwarts</header>
+        <article>
+          <p>
+            The Path to Hogwarts is the first main quest within Hogwarts Legacy;
+            where your journey begins, with an ambush on your way to Hogwarts
+            revealing a sinister scheme, and innate ancient powers within you
+            that anyone could have expected.
+          </p>
+          <p>Below are some of the things that you'll be doing:</p>
+          <ul>
+            <li>The Journey Begins</li>
+            <li>Follow Professor Fig</li>
+            <li>Explore the Ruins</li>
+            <li>Wake a Goblin</li>
+            <li>Learn Revelio</li>
+            <li>Learn Lumos</li>
+            <li>Solve Puzzles</li>
+          </ul>
+        </article>
+      </section>
+      <section
+        id="welcome_to_hogwarts"
+        class="main-section">
+        <header>Welcome to Hogwarts</header>
+        <article>
+          <p>
+            Welcome to Hogwarts is the second main quest within Hogwarts Legacy;
+            where you are sorted into your House, and begin your life in the
+            legendary school of witchcraft and wizardry.
+          </p>
+        </article>
+      </section>
+      <section
+        id="charms_class"
+        class="main-section">
+        <header>Charms Class</header>
+        <article>
+          <p>
+            Charms Class is the third main quest within Hogwarts Legacy; where
+            you begin your training at Hogwarts by learning the Summoning Spell,
+            Accio.
+          </p>
+          <code>Beginning the Lesson and kicking ass at Summoner's court</code>
+        </article>
+      </section>
+      <section
+        id="defense_against_the_dark_arts_class"
+        class="main-section">
+        <header>Defense Against the Dark Arts Class</header>
+        <article>
+          <p>
+            Defense Against the Dark Arts Class is the fourth main quest within
+            Hogwarts Legacy; where you continue your training on your first day
+            by learning the Levioso spell.
+          </p>
+          <p>
+            After tracking Defense Against the Dark Arts Class, head to the
+            Defense Against the Dark Arts classroom. Once you enter and begin
+            the lesson, you’ll meet Professor Hecat, Sebastian Sallow, and
+            Leander Prewett. Here you will learn Levioso, completing the same
+            spell-learning minigame as before. Hecat will then instruct you to
+            perform the same on the dummy. Use a Basic Cast, then use Levioso
+            (to break the Yellow shield), followed by a Basic Cast to complete
+            the tutorial.
+          </p>
+          <p>
+            You will then begin a duel against Sebastian Sallow, the first one
+            in the game. Here you can use Basic Cast, Levioso, and Protego (and
+            the Stupefy counter-attack). Win or lose the duel, Hecat will
+            congratulate you on your effort, and you’ll then need to speak to
+            Sebastian. He’ll inform you of a secret dueling club, led by Lucan
+            Brattleby near the Clocktower.
+          </p>
+        </article>
+      </section>
+      <section
+        id="weasley_after_class"
+        class="main-section">
+        <header>Weasley After Class</header>
+        <article>
+          <p>
+            Weasley After Class is the fifth main quest within Hogwarts Legacy;
+            where you prepare to depart for Hogsmeade, but not before learning a
+            new spell, Reparo, whilst completing additional assignments from
+            Professor Ronen.
+          </p>
+          <code>Meet Professor Weasley</code>
+          <p>
+            Head to the Transfiguration classroom to begin, where you will be
+            introduced to the House Elf, Deek. Professor Weasley will discuss
+            the additional assignments that Professors will give to you to help
+            you catch up to other students, as well as discuss the imminent trip
+            to Hogsmeade to refresh your supplies.
+          </p>
+          <p>
+            Professor Weasley suggests traveling to Hogsmeade with a fellow
+            student, and you get to choose between Natsai Onai and Sebastian
+            Sallow. Whomever you choose, you are informed to speak with
+            Professor Ronen about an additional assignment.
+          </p>
+          <code>Professor Ronen’s Assignment - Learn Reparo</code>
+          <p>
+            Report to Professor Ronen in the courtyard outside, and he’ll set
+            you some tasks prior to learning Reparo. The first is as follows:
+          </p>
+          <ul>
+            <li>Collect the flying page near the broken statue</li>
+            <li>
+              Collect the flying page in the Defense Against the Dark Arts Tower
+            </li>
+          </ul>
+          <p>
+            You can collect these pages by looking at them as they fly around
+            and casting Accio. Track their general location using the mini-map,
+            then keep your eyes up to see a book flapping around in the air
+            within that general area. With them both collected, return to Ronen
+            and you’ll need to complete the spell-learning minigame as before,
+            this time in the shape of a spiral.
+          </p>
+        </article>
+      </section>
+      <section
+        id="welcome_to_hogsmeade"
+        class="main-section">
+        <header>Welcome to Hogsmeade</header>
+        <article>
+          <p>
+            Welcome to Hogsmeade is the sixth main quest within Hogwarts Legacy;
+            where you venture into Hogsmeade for the first time, restocking on
+            supplies, before fending off a surprise attack from deadly enemies.
+          </p>
+          <code>Departing for Hogsmeade</code>
+          <p>
+            After choosing your traveling companion to go to Hogsmeade with,
+            meet either Natsai or Sebastian at their respective locations.
+            Follow them outside and then out of Hogwarts grounds, down the road
+            towards Hogsmeade. They will point out bushes of Lacewing flies on
+            the way that you can collect for potion-making if you wish.
+          </p>
+          <code>Tomes and Scrolls</code>
+          <p>
+            At the very south end of Hogsmeade, you’ll find Tomes and Scrolls.
+            Head inside and speak to Thomas Brown. After a short conversation,
+            you can purchase the Potting Table with a Small Pot and the Small
+            Potions Station Spellcrafts for free.
+          </p>
+          <code>Ollivanders</code>
+          <p>
+            Just opposite The Three Broomsticks in the center of Hogsmeade,
+            you’ll find Ollivanders. Head inside and use the bell on the counter
+            to speak with Gerbold Ollivander. After a failed attempt or two, a
+            wand reveals itself. Here you can customize your wand to your
+            liking, and once completed you and the wand will synchronize
+            perfectly.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>
